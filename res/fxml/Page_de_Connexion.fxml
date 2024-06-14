@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pabe" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="863.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.Task.Manager.Controller.ConnexionController">
+   <children>
+      <Pane layoutY="30.0" onMouseClicked="#LogOut" prefHeight="270.0" prefWidth="200.0" style="-fx-background-radius: 0 0 155 0; -fx-background-color: #1ecd23;">
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" height="111.44" radius="47.4375" width="80.31" />
+         </effect></Pane>
+      <Label layoutX="200.0" layoutY="241.0" text="Identifiant">
+         <font>
+            <Font name="Heiti TC Light" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="200.0" layoutY="315.0" text="Password :">
+         <font>
+            <Font name="Heiti TC Light" size="19.0" />
+         </font>
+      </Label>
+      <Separator layoutX="606.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="610.0" prefWidth="5.0" />
+      <PasswordField fx:id="passField" layoutX="305.0" layoutY="313.0" prefHeight="25.0" prefWidth="248.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="IdField" layoutX="306.0" layoutY="239.0" prefHeight="25.0" prefWidth="248.0">
+         <font>
+            <Font name="Heiti TC Light" size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="LogInButton" layoutX="332.0" layoutY="423.0" mnemonicParsing="false" onMouseClicked="#Connexion" prefHeight="25.0" prefWidth="173.0" style="-fx-background-radius: 7; -fx-background-color: #12bc34; -fx-text-fill: #ffffff;" text="Sign In">
+         <font>
+            <Font name="Heiti TC Light" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <MenuBar layoutX="-3.0" layoutY="-2.0" prefHeight="32.0" prefWidth="869.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Fichier">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Utilisateur">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Nouvel Utilisateur" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="A propos" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <ImageView fitHeight="191.0" fitWidth="200.0" layoutX="319.0" layoutY="39.0">
+         <image>
+            <Image url="@../icons/user-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="270.0" fitWidth="248.0" layoutX="613.0" layoutY="192.0">
+         <image>
+            <Image url="@../icons/Round-Robin-unscreen.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

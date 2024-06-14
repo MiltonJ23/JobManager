@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="683.0" prefWidth="1235.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.Task.Manager.Controller.AccueilController">
+   <children>
+      <ImageView fitHeight="330.0" fitWidth="321.0" layoutX="22.0" layoutY="12.0">
+         <image>
+            <Image url="@../icons/icone-vecteur-noir-groupe-roue-dentee-jeu-engrenages-symbole-web-glyphe-simple-reglage-icone-engrena-removebg-preview.png" />
+         </image>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" radius="15.19" width="41.76" />
+         </effect>
+      </ImageView>
+      <Label layoutX="356.0" layoutY="160.0" text="Job">
+         <font>
+            <Font name="Beirut Regular" size="59.0" />
+         </font>
+      </Label>
+      <Label layoutX="356.0" layoutY="240.0" text="Manager">
+         <font>
+            <Font name="Cambria Math" size="55.0" />
+         </font>
+      </Label>
+      <Pane layoutY="342.0" prefHeight="340.0" prefWidth="391.0" style="-fx-background-radius: 0 20000 0 0; -fx-background-color: #1bc34d;">
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" radius="36.6875" width="127.75" />
+         </effect>
+      </Pane>
+      <ImageView fitHeight="174.0" fitWidth="236.0" layoutX="978.0" layoutY="27.0">
+         <image>
+            <Image url="@../icons/logo_ict-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="lancer" layoutX="868.0" layoutY="342.0" mnemonicParsing="false" onMouseClicked="#lauchApp" prefHeight="41.0" prefWidth="360.0" style="-fx-background-radius: 9; -fx-background-color: #278309; -fx-text-fill: #ffffff;" text="Launch Application">
+         <font>
+            <Font name="Heiti TC Light" size="19.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="laisser" layoutX="868.0" layoutY="413.0" mnemonicParsing="false" onMouseClicked="#LogOut" prefHeight="41.0" prefWidth="360.0" style="-fx-background-radius: 9; -fx-background-color: #c50606; -fx-text-fill: #ffffff;" text="Quit">
+         <font>
+            <Font name="Heiti TC Light" size="19.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
