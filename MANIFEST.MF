@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Built-By: Zingui Fred Mike
+Build-Jdk: 17.0.8
+Main-Class: org.Task.Manager.Main
+Class-Path: lib/javaFx
+Created-By: 1.0.0 (MacOS)
