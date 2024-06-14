@@ -25,28 +25,42 @@
 Here're some of the project's best features:
 
 *   Zsh
+*   sh
+*   Shell
 
 <h2>🛠️ Installation Steps:</h2>
 
-<p>1. Enable the build file</p>
+<p>1. Download libraries</p>
+
+```
+Java Mysql5.46 connector;  javaFX{basecontrolsgraphicsfxml...}  org.Notifications {The librairie responsible for the handling of push Notifications}
+```
+
+<p>2. Adding Librairies</p>
+
+```
+Insert all the Librairies in a lib/javaFx folder
+```
+
+<p>3. Enable the build Script File</p>
 
 ```
 chmod a+x build.sh
 ```
 
-<p>2. Execute the build</p>
+<p>4. Execute the build</p>
 
 ```
 ./build.sh
 ```
 
-<p>3. Enable the Run File</p>
+<p>5. Enable the run Script File</p>
 
 ```
 chmod a+x run.sh
 ```
 
-<p>4. Execute the run</p>
+<p>6. Execute the run</p>
 
 ```
 ./run.sh
@@ -67,3 +81,7 @@ Technologies used in the project:
 <h2>🛡️ License:</h2>
 
 This project is licensed under the GPL-3
+
+
+<h2>😅Additionnal Informations:</h2>
+People with a Windows system will not be able to work with the scripts in the state, they will have to convert/transcribe the .sh files to .bat files
